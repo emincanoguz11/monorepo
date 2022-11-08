@@ -32,7 +32,7 @@ export const Topnav: FC = () => {
                   <PlusIcon />
                 </IconButton>
                 <ThemeToggle />
-                <UserDropdown login={user.username} />
+                <UserDropdown login={user.nickname} />
               </>
             ) : (
               <>

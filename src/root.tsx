@@ -15,10 +15,10 @@ import {
 } from "@remix-run/react";
 import { useEffect } from "react";
 import { ThemeProvider, Topnav, useClientStyle, useTheme } from "~/ui-library";
+import { getUser } from "./cognito-session.server";
 import { UserContextManager } from "./features/auth/user-context";
 import loadingIndicatorStyles from "./features/loading-indicator/loading-indicator.css";
 import { useLoadingIndicator } from "./features/loading-indicator/useLoadingIndicator";
-import { getUser } from "./session.server";
 import { darkTheme } from "./stitches.config";
 
 type LoaderData = {

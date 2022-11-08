@@ -11,6 +11,11 @@ services:
       - DATABASE_URL=postgresql://pgtest:pgtest@postgres:5432/pgtest?schema=public&connect_timeout=300
       - SESSION_SECRET=sessionsecret
       - NODE_ENV=development
+      - COGNITO_DOMAIN=pasaport-dev.kamp.us
+      - COGNITO_CLIENT_ID=5noboqn6k40q6tf069cpdfablj
+      - COGNITO_CLIENT_SECRET=jp2iq8g77rlt37str5bgkcmni0b9pkj1of1rvrm4c8an7bg46fe
+      - COGNITO_CLIENT_CALLBACK=http://localhost:3000/auth/callback
+      - DEBUG=pano:*
     volumes:
       - ./src:/app/src
       - ./prisma:/app/prisma
